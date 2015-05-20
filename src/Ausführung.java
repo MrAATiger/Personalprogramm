@@ -10,7 +10,11 @@ public class Ausführung {
 	System.out.println ("Bitte gebe deinen Vornamen und Nachnamen ein");
 	Mitarbeiter mitarbeiter1 = new Mitarbeiter (Vorname,Nachname);
 	System.out.println (mitarbeiter1.getNachname());
-	}
 	
+	}
+	public String toString () {
+		return (Vorname);
+		
+	}
 	
 }
