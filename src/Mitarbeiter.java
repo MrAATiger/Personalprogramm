@@ -1,12 +1,12 @@
 
 public class Mitarbeiter {
 
-	private String Vorname;
-	private String Nachname;
+	private final String Vorname;
+	private final String Nachname;
 	
-	public Mitarbeiter (String a, String b) {
-		this.Vorname = a;
-		this.Nachname = b;
+	public Mitarbeiter (String Vorname, String Nachname) {
+		this.Vorname = Vorname;
+		this.Nachname = Nachname;
 	}
 	
 	public String getVorname (){

@@ -1,20 +1,32 @@
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 public class Ausführung {
 	
 	Scanner sc = new Scanner (System.in);
-	String Vorname = sc.nextLine ();
-	String Nachname = sc.nextLine();
+	
+	
+	public void ersteAusführung () {
+		System.out.println ( "Bitte gebe deinen Namen ein");
+		
+		eingabe ();
+	}
 	
 	public void eingabe () {
 
-	System.out.println ("Bitte gebe deinen Vornamen und Nachnamen ein");
-	Mitarbeiter mitarbeiter1 = new Mitarbeiter (Vorname,Nachname);
-	System.out.println (mitarbeiter1.getNachname());
+	String vorname = sc.nextLine ();
+	String nachname = sc.nextLine();
+	Mitarbeiter mitarbeiter1 = new Mitarbeiter (vorname,nachname);
+	
+	
+	System.out.println("mein Name lautet " + mitarbeiter1.getVorname() + mitarbeiter1.getNachname());
+
+	zweiteAusführung ();
+	}
+	
+	public void zweiteAusführung () {
+	
 	
 	}
-	public String toString () {
-		return (Vorname);
-		
-	}
+	
 	
 }
